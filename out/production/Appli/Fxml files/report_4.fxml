@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TableControllers.Report_4_Controller">
     <children>
-        <TableView fx:id="table_r2" prefHeight="400.0" prefWidth="600.0">
+        <TableView fx:id="table_r4" prefHeight="400.0" prefWidth="600.0">
             <columns>
-                <TableColumn fx:id="client_id" prefWidth="150.0" text="Client_ID" />
-                <TableColumn fx:id="client_name" minWidth="0.0" prefWidth="283.0" text="Client_Name" />
+                <TableColumn fx:id="client" prefWidth="150.0" text="CLIENT" />
+                <TableColumn fx:id="frequency" minWidth="0.0" prefWidth="283.0" text="FREQUENCY" />
             </columns>
         </TableView>
     </children>

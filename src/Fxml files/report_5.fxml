@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TableControllers.Report_5_Controller">
+    <children>
+        <TableView fx:id="table_r5" prefHeight="400.0" prefWidth="600.0">
+            <columns>
+                <TableColumn fx:id="n_purch" prefWidth="150.0" text="NUM OF PURCHASES" />
+                <TableColumn fx:id="mnth" minWidth="0.0" prefWidth="283.0" text="MONTH" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

@@ -57,7 +57,7 @@ public class Report_2_Controller implements Initializable
         }
 
         client_id.setCellValueFactory(new PropertyValueFactory<>("client_id"));
-        client_name.setCellValueFactory(new PropertyValueFactory<>("client"));
+        client_name.setCellValueFactory(new PropertyValueFactory<>("client_name"));
 
 
 
