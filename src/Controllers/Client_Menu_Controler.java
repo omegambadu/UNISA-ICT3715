@@ -10,6 +10,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
 import obj.Client;
 import obj.Client_Validation;
 import sample.DbConnector;
@@ -172,7 +173,10 @@ public class Client_Menu_Controler implements Initializable {
 
     }
 
-
+    @FXML
+    public void refresh(MouseEvent mouseEvent) throws SQLException {
+        searchClients();
+    }
 
     private void loadChoiceBoxData(){
     ref_Options.removeAll(ref_Options);

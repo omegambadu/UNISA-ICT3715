@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Tooltip?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #162447;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Supplement_Menu_Controler">
+    <children>
+        <Label layoutX="14.0" layoutY="53.0" style="-fx-font-weight: bold;" text="Supplement ID" textFill="#fff8f8" />
+        <TextField fx:id="bnk_cde" layoutX="384.0" layoutY="138.0" prefHeight="25.0" prefWidth="38.0" />
+        <TextField fx:id="acc_num" layoutX="382.0" layoutY="89.0" />
+        <TextField fx:id="bnk" layoutX="382.0" layoutY="47.0" />
+        <Label layoutX="32.0" layoutY="91.0" style="-fx-font-weight: bold;" text="Supplier ID" textFill="WHITE" />
+        <Label layoutX="302.0" layoutY="93.0" style="-fx-font-weight: bold;" text="Nappi_code" textFill="WHITE" />
+        <Label layoutX="342.0" layoutY="142.0" style="-fx-font-weight: bold;" text="VAT" textFill="#fffdfd" />
+        <Label layoutX="31.0" layoutY="142.0" prefHeight="17.0" prefWidth="77.0" style="-fx-font-weight: bold;" text="Description" textFill="#f8f8f8" />
+        <Label layoutX="293.0" layoutY="53.0" style="-fx-font-weight: bold;" text="Cost Exclusive" textFill="WHITE" />
+        <Button fx:id="btnAddSupplier" layoutX="171.0" layoutY="245.0" mnemonicParsing="false" onAction="#onAddItem" prefHeight="25.0" prefWidth="235.0" style="-fx-font-weight: bold;" text="Add New Supplier" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font></Button>
+        <AnchorPane layoutX="551.0" layoutY="8.0" prefHeight="600.0" prefWidth="643.0" style="-fx-background-color: #1B1B2F;">
+            <children>
+                <Label layoutX="144.0" layoutY="84.0" prefHeight="38.0" prefWidth="77.0" style="-fx-font-weight: bold;" text="LOOK UP " textFill="#fffdfd" />
+                <TextField fx:id="filterSearch" layoutX="205.0" layoutY="90.0" prefHeight="25.0" prefWidth="251.0" promptText="search for any supplement..." />
+                <TableView fx:id="supplier_view" layoutX="11.0" layoutY="123.0" prefHeight="451.0" prefWidth="624.0">
+                    <columns>
+                        <TableColumn fx:id="sup_id_col" prefWidth="106.0" text="Supplement_id" />
+                        <TableColumn fx:id="cnct_col" prefWidth="65.0" text="Suplier_ID" />
+                        <TableColumn fx:id="tel_col" minWidth="0.0" prefWidth="77.0" text="Description" />
+                        <TableColumn fx:id="mail_col" prefWidth="75.0" text="Cost_excl" />
+                        <TableColumn fx:id="bnk_col" prefWidth="54.0" text="Cost_incl" />
+                        <TableColumn fx:id="bnk_cde_col" prefWidth="62.0" text="Min_levels" />
+                        <TableColumn fx:id="acc_num_col" prefWidth="112.0" text="Current_stock_levels" />
+                        <TableColumn fx:id="acc_type_col" prefWidth="72.0" text="Nappi_code" />
+                    </columns>
+                </TableView>
+                <ImageView fitHeight="38.0" fitWidth="28.0" layoutX="116.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="file:C://Users/Thinkpad/IdeaProjects/Appli/src/Photos/lookup.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="refresh" fitHeight="25.0" fitWidth="28.0" layoutX="464.0" layoutY="90.0" onMouseClicked="#refresh" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="file:C://Users/Thinkpad/IdeaProjects/Appli/src/Photos/Reload-icon.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <TextField fx:id="supli_id" layoutX="107.0" layoutY="49.0" />
+        <TextArea fx:id="console" layoutX="37.0" layoutY="422.0" prefHeight="161.0" prefWidth="494.0" />
+      <TextArea layoutX="106.0" layoutY="140.0" prefHeight="79.0" prefWidth="149.0" />
+      <ChoiceBox layoutX="107.0" layoutY="89.0" prefWidth="150.0" />
+      <Label layoutX="323.0" layoutY="172.0" style="-fx-font-weight: bold;" text="Min_lev" textFill="#fffdfd" />
+      <Label layoutX="290.0" layoutY="202.0" style="-fx-font-weight: bold;" text="Current_Stock" textFill="#fffdfd" />
+      <TextField fx:id="bnk_cde1" layoutX="384.0" layoutY="167.0" prefHeight="25.0" prefWidth="38.0" />
+      <TextField fx:id="bnk_cde2" layoutX="384.0" layoutY="197.0" prefHeight="25.0" prefWidth="38.0" />
+    </children>
+</AnchorPane>
