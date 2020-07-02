@@ -36,11 +36,11 @@ public class Report_1_Controller implements Initializable {
     private TableColumn  <Report_1, String>  inv_date;
 
  ObservableList<Report_1> oblist= FXCollections.observableArrayList();
+    Connection con= DbConnector.getConnection();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-        Connection con= DbConnector.getConnection();
 
         try {
             ResultSet rs = con.createStatement().executeQuery(sql_query);
